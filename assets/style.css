@@ -6,6 +6,12 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -81,18 +87,16 @@ body {
 }
 .about-me__introduction {
 	font-family: 'Spectral';
-	font-weight: 800;
+	font-weight: 600;
 	font-style: italic;
-	width: 60%;
+	width: 70%;
 }
 #about-me p {
 	width: 80%;
-	font-size: 14px;
+	font-size: 1.1rem;
+	font-weight: 900;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -238,6 +242,7 @@ form textarea {
 	line-height: 2.5em;
 	font-size: 1.2em;
 	margin-bottom: 20px;
+	resize: none;
 }
 input[type="submit"] {
 	background-color: #BEB45A;
