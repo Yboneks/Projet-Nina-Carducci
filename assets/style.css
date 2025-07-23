@@ -77,6 +77,20 @@ img {
 	width: 100%;
 
 }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  color: #000;
+}
+
 #about-me {
 	flex: 2
 }
@@ -105,12 +119,13 @@ img {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: #222;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 .item-column {
 	position: relative;
@@ -247,6 +262,44 @@ form textarea {
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+}
+
+footer {
+  background-color: #BEB45A;
+  color: #000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer_left {
+  width: 100%;
+  padding: 2em;
+}
+
+.footer_left ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  width: 100%;
+  background-color: #5f5826;
+}
+
+.footer_right p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 @media all and (max-width: 1180px) {

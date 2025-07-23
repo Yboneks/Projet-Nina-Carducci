@@ -2,12 +2,35 @@
 <html lang="fr">
 
 <head>
-	<title>Site Nina Carducci - Photographe professionnelle à Bordeaux</title>
+	<title>Nina Carducci - Photographe professionnelle à Bordeaux</title>
 	<!-- Balise META -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description"
 		content="Nina Carducci photographe professionnelle sur Bordeaux capturant vos moments de la meilleure des manières. Vous pouvez dès maintenant faire une demande de devis et réservez.">
+	<!-- Meta Facebook -->
+	<meta property="og:site_name" content="Nina Carducci - Photographe professionnelle à Bordeaux" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://yboneks.github.io/Projet-Nina-Carducci/" />
+	<meta property="og:author" content="Nina Carducci">
+	<meta property="og:title" content="Nina Carducci - Photographe professionnelle à Bordeaux" />
+	<meta property="og:description"
+		content="Nina Carducci photographe professionnelle sur Bordeaux capturant vos moments de la meilleure des manières. Vous pouvez dès maintenant faire une demande de devis et réservez." />
+	<meta property="og:image"
+		content="https://github.com/Yboneks/Projet-Nina-Carducci/blob/master/assets/images/slider/1920/edward-cisneros.webp" />
+
+	<!-- Twitter Cards -->
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@ninaCarducci" />
+	<meta name="twitter:creator" content="@ninaCarducci">
+	<meta name="twitter:title" content="Nina Carducci - Photographe professionnelle à Bordeaux" />
+	<meta name="twitter:description"
+		content="Nina Carducci photographe professionnelle sur Bordeaux capturant vos moments de la meilleure des manières. Vous pouvez dès maintenant faire une demande de devis et réservez." />
+	<meta name="twitter:image"
+		content="https://github.com/Yboneks/Projet-Nina-Carducci/blob/master/assets/images/slider/1920/edward-cisneros.webp" />
+	<meta name="twitter:img:alt" content="Couple de mariés s'embrassant" />
+
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +38,43 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": ["LocalBusiness", "Service"],
+			"name": "Nina Carducci",
+			"description": "Nina Carducci, photographe professionnelle à Bordeaux",
+			"image": "https://github.com/Yboneks/Projet-Nina-Carducci/blob/master/assets/images/nina.webp",
+			"url": "https://yboneks.github.io/Projet-Nina-Carducci/",
+			"telephone": "0556677889",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "FR"
+				},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "44.8466732",
+				"longitude": "-0.6065805"
+			},
+			"openingHoursSpecification": {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"lundi",
+					"mardi",
+					"mercredi",
+					"jeudi",
+					"vendredi"
+				],
+				"opens": "10:00",
+				"closes": "19:00"
+			},
+			"priceRange" : "50€ - 400€"
+		}
+	</script>
+
 </head>
 
 <body>
@@ -29,7 +87,8 @@
 				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-						target="_blank"><img src="assets/images/instagram.webp" alt=""></a></li>
+						target="_blank"><img src="assets/images/instagram.webp"
+							alt="lien vers le réseau social Instagram"></a></li>
 			</ul>
 		</nav>
 	</header>
@@ -206,7 +265,7 @@
 		<div id="contact">
 			<div class="container">
 				<div class="form-container">
-					<h3>Une question ? Une demande de devis ?</h3>
+					<h2>Une question ? Une demande de devis ?</h2>
 					<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 					<form action="" method="post">
 						<label for="nom">Nom</label>
@@ -226,7 +285,23 @@
 		</div>
 	</main>
 
+	<footer>
+		<div class="footer_left">
+			<ul>
+				<li>Nina Carducci</li>
+				<li>Photographe professionnelle</li>
+				<li>68 avenue Alsace-Lorraine, 33200 Bordeaux</li>
+				<li>05 56 67 78 89</li>
+				<li>Du lundi au vendredi de 10 h à 19 h</li>
+			</ul>
+		</div>
+		<div class="footer_right">
+			<p>© 2024 Nina Carducci</p>
+		</div>
+	</footer>
 
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="./assets/maugallery.min.js"></script>
 	<script src="./assets/scripts.js"></script>
